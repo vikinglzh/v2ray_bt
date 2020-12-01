@@ -2,8 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-#   Dscription: V2ray ws+tls With Bt-Panel
-#   Version: 1.3.20.00908
+#   Dscription: V2ray_Bt-Panel
 
 #fonts color
 Red="\033[1;31m"
@@ -43,7 +42,7 @@ install_prepare() {
     fi
 
     echo -e "${Yellow} 请确保已完成伪装网址的域名解析 ${Font}"
-    read -rp "请输入域名信息(eg:www.hanx.vip):" domain
+    read -rp "请输入域名信息(eg:www.baidu.com):" domain
 
     webstate=26
     Website_config
@@ -245,7 +244,7 @@ Website_arrange() {
         mkdir -p /www/wwwroot/${domain}
     fi    
     cd /www/wwwroot/${domain}
-    wget -nc https://github.com/vikinglzh/v2ray_bt/master/index.zip
+    wget -nc https://github.com/vikinglzh/v2ray_bt/raw/master/index.zip
     unzip index.zip
 }
 
