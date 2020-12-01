@@ -1,5 +1,6 @@
 # v2ray_bt
- 与宝塔面板共存v2ray一键安装脚本
+**与宝塔面板共存v2ray一键安装脚本**
+
 使用说明：
 
 1、目前仅测试过CentOS7，其他系统未经测试；
@@ -12,6 +13,8 @@
 
 5、使用本脚本即可完成部署；
 
-一键脚本：wget -N --no-check-certificate https://raw.githubusercontent.com/vikinglzh/V2ray_bt/master/v2bt.sh && chmod +x v2bt.sh && bash v2bt.sh
-
-v2配置目录：/usr/local/etc/v2ray/**.config
+一键脚本：
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/vikinglzh/V2ray_bt/master/v2bt.sh && chmod +x v2bt.sh && bash v2bt.sh
+```
+> v2配置目录：/usr/local/etc/v2ray/**.config
